@@ -1,0 +1,12 @@
+.container {
+    margin: 0 auto;
+    padding: 10vh 0;
+    display: flex;
+    justify-content: center;
+    
+    .paper {
+        width: 800px;
+        height: 1040px;
+        padding: 20px
+    }
+}
