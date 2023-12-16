@@ -1,5 +1,53 @@
-.App {
-    background-color: azure;
+$primaryColor: #ED217C;
+$secondaryColor: #252422;
+$creamColor: #FFFCF2;
+
+.navigation {
+    background-color: $creamColor;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
+
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    
+    &__container {
+        display: flex !important;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: center;
+    }
+
+    &__title {
+        color: $secondaryColor;
+
+        .custom-type-animation::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+        }
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    color: $secondaryColor;
+}
+
 
 

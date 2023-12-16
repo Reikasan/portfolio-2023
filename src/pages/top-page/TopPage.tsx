@@ -1,6 +1,16 @@
+import { useEffect } from "react";
+import HeroSection from "../../Components/hero-section";
+
 const TopPage = () => {
+    // useEffect(() => {
+    //     console.log("TopPage");
+    // }, []);
+
     return (
-        <div>Top Page</div>
+        <div>
+            <HeroSection />
+            
+        </div>
     )
 }
 
