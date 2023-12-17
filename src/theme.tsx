@@ -4,11 +4,13 @@ declare module '@mui/material/styles' {
     interface Palette {
         primaryButton: Palette['primary'];
         secondaryButton: Palette['secondary'];
+        white: Palette['primary'];
     }
   
     interface PaletteOptions {
         primaryButton?: PaletteOptions['primary'];
         secondaryButton?: PaletteOptions['secondary'];
+        white: PaletteOptions['primary'];
     }
   }
   
@@ -27,6 +29,9 @@ const theme = createTheme({
         secondary: {
             main: '#252422',
         },
+        white: {
+            main: '#FFF',
+        },
         primaryButton: {
             main: '#ED217C',
             light: '#FFF',
@@ -41,6 +46,14 @@ const theme = createTheme({
         },
     },
     components: {
+        MuiAppBar: {
+            styleOverrides: {
+                root: {
+                    backgroundColor: '#FFF',
+                    color: '#ED217C',
+                },
+            },
+        },
         MuiButton: {
           styleOverrides: {
             root: {
