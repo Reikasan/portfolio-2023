@@ -33,12 +33,64 @@ body {
     }
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    color: $secondaryColor;
+#about {
+    background-color: #FFFCF2;
+    height: 600px;
+
+    div.hello {
+        height: 100%;
+    }
 }
+
+
+.running-message {
+    color: #FFFCF2;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-color: #F54900;
+    overflow: hidden;
+
+    &__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        font-family: silkscreen;
+        font-size: 210px;
+        line-height: 140px;
+        margin-top: -19px;
+        letter-spacing: -30px;
+        word-break: keep-all;
+
+        &.from-left {
+            animation: slideFromLeft 5s linear infinite;
+        }
+
+        &.from-right {
+            animation: slideFromRight 5s linear infinite;
+        }
+
+        @keyframes slideFromLeft {
+            0% { transform: translateX(100vw)}
+            100% { transform: translateX(-600px)}
+        }
+
+        @keyframes slideFromRight {
+            0% { transform: translateX(-600px)}
+            100% { transform: translateX(100vw)}
+        }
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    .from-left, .from-right {
+        animation-duration: 8s !important;
+
+    }
+}
+
+
 
 
 
