@@ -7,10 +7,10 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import { Link as Scroll } from 'react-scroll';
 
-const sections = ['about', 'project', 'contact'];
+const sections = ['about', 'projects', 'contact'];
 
 const Navigation = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -23,7 +23,7 @@ const Navigation = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" id="navigation">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -98,32 +98,30 @@ const Navigation = () => {
             >
               {sections.map((section) => (
                 <MenuItem key={section} onClick={handleCloseNavMenu}>
-                  <Typography 
-                    textAlign="center" 
-                    variant="body1" 
-                    component="a"
-                    href={`#${section}`}
-                    sx={{
-                      color: 'inherit',
-                      textTransform: 'capitalize',
-                      textDecoration: 'none',
-                    }}
+                  <Scroll 
+                    className='nav-link mobile'
+                    to={`${section}`}
+                    smooth
+                    spy
                   >
                     {section}
-                  </Typography>
+                  </Scroll>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'end'}}>
             {sections.map((section) => (
-              <Button
+               <Scroll
+                to={`${section}`}
                 key={section}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                smooth
+                spy
+                className='nav-link'
               >
                 {section}
-              </Button>
+              </Scroll>
             ))}
           </Box>
         </Toolbar>
