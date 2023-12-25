@@ -1,20 +1,19 @@
 // import { useEffect, useState } from "react";
+import Navigation from "../../Components/navigation";
 import HeroSection from "../../Components/hero-section";
-import { Container } from "@mui/material";
-import RunningMessage from "../../Components/running-message";
+import Projects from "../../Components/projects";
+import About from "../../Components/about";
+import Contact from "../../Components/contact";
+
 
 const TopPage = () => {
     return (
         <div>
+            <Navigation />
             <HeroSection />
-            <section id="about">
-                <RunningMessage message="about" direction="from-right" />
-                <Container maxWidth="sm" >
-                    <div className="hello">Hello</div>
-                </Container>
-                <RunningMessage message="reika" direction="from-left" />
-
-            </section>
+            <Projects />
+            <About />
+            <Contact />
         </div>
     )
 }

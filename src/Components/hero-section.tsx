@@ -1,5 +1,4 @@
 import { Button, Container } from "@mui/material";
-import Navigation from "./navigation";
 import { TypeAnimation } from "react-type-animation";
 import { useRef } from "react";
 
@@ -8,7 +7,6 @@ const HeroSection = () => {
     const repeatCount = 3;
     return (
         <div className="hero-section">
-            <Navigation />
             <Container maxWidth="sm" className="hero-section__container">
                 <div className="hero-section__content">
                     <h1 className="hero-section__title">
