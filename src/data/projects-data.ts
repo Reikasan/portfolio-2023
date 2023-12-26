@@ -1,11 +1,12 @@
 import BarImage from '../assets/images/bar-screenshot.png';
 import PortfolioImage from '../assets/images/portfolio-screenshot.png';
+import BookAppImage from '../assets/images/book-app-screenshot.png';
 
 export const projectsData = [
     {
-        imageSrc: '',
+        imageSrc: BookAppImage,
         title: 'Book Log App',
-        description: '.',
+        description: 'This is a book log app built with React and Laravel.',
         technologies: ['React', 'TypeScript', 'Laravel', 'MySQL', 'Sass', 'Google Books API'],
         site: '',
         github: 'https://github.com/Reikasan/Book-app'
@@ -23,7 +24,7 @@ export const projectsData = [
         title: 'Portfolio Website',
         description: 'This Website built with React.',
         technologies: ['React', 'Material UI', 'TypeScript', 'Sass'],
-        site: '',
+        site: 'localhost:3000',
         github: 'https://github.com/Reikasan/portfolio-2023'
     }
 ];
