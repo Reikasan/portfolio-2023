@@ -14,7 +14,8 @@ const RunningMessage:React.FC<RunningMessageProps> = ({message, direction}) => {
 
     return (
         <div className="running-message">
-            <p className={classNames(cls)}>{message}</p>
+            <h1 className={classNames(cls)}>{message}</h1>
+            <h1 className={classNames(cls)}>{message}</h1>
         </div>
     );
 }
