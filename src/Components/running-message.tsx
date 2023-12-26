@@ -7,15 +7,22 @@ interface RunningMessageProps {
 
 const RunningMessage:React.FC<RunningMessageProps> = ({message, direction}) => {
     let cls = {
-        "running-message__text": true,
         'from-right' : direction === "from-right",
         'from-left': direction === "from-left",
     }
 
     return (
         <div className="running-message">
-            <h1 className={classNames(cls)}>{message}</h1>
-            <h1 className={classNames(cls)}>{message}</h1>
+            <div className="running-message__container">
+                <div className={classNames(cls)}>
+                    <h1>{message}</h1>
+                </div>
+                <div className={classNames(cls)}>
+                    <h1>{message}</h1>
+                </div>
+
+
+            </div> 
         </div>
     );
 }
