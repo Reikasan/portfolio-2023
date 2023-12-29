@@ -6,8 +6,8 @@ export const projectsData = [
     {
         imageSrc: BookAppImage,
         title: 'Book Log App',
-        description: 'This is a book log app built with React and Laravel.',
-        technologies: ['React', 'TypeScript', 'Laravel', 'MySQL', 'Sass', 'Google Books API'],
+        description: 'This app is created for personal use. User can save book information by using Google Books API with memo.',
+        technologies: ['React', 'TypeScript', 'Laravel', 'MySQL', 'Sass', 'Google Books API', 'Docker'],
         site: '',
         github: 'https://github.com/Reikasan/Book-app'
     },
