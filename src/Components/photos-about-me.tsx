@@ -1,6 +1,7 @@
 import { Box, Modal, Typography } from "@mui/material";
 import { aboutMeData } from "../data/about-me-data";
 import React from "react";
+import PhotosAboutMeGridItem from "./photo-about-me-grid-item";
 
 interface aboutMeData {
     imageSrc: string;
@@ -22,67 +23,40 @@ const PhotosAboutMe = () => {
         <div className="photo-about-me">
             <div className="grid">
                 <Box className="grid-item grid1" >
-                    <img src={aboutMeData[0].imageSrc} alt={aboutMeData[0].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[0].title}</h4>
-                    </div>
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[0]} />
                 </Box>
                 <Box className="grid-item grid2">
-                    <img src={aboutMeData[1].imageSrc} alt={aboutMeData[1].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[1].title}</h4>
-                    </div>
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[1]} />
                 </Box>
-                <div className="grid-item grid3">
-                    <img src={aboutMeData[2].imageSrc} alt={aboutMeData[2].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[2].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid4">
-                    <img src={aboutMeData[3].imageSrc} alt={aboutMeData[3].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[3].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid5">
-                    <img src={aboutMeData[4].imageSrc} alt={aboutMeData[4].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[4].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid6">
-                    <img src={aboutMeData[5].imageSrc} alt={aboutMeData[5].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[5].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid7">
+                <Box className="grid-item grid3">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[2]} />
+                </Box>
+                <Box className="grid-item grid4">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[3]} />
+                </Box>
+                <Box className="grid-item grid5">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[4]} />
+                </Box>
+                <Box className="grid-item grid6">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[5]} />
+                </Box>
+                <Box className="grid-item grid7">
                     <div className="text-content">
                      <h3>10 Things about Me</h3>
                     </div>
-                </div>
-                <div className="grid-item grid8">
-                    <img src={aboutMeData[6].imageSrc} alt={aboutMeData[6].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[6].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid9">
-                    <img src={aboutMeData[7].imageSrc} alt={aboutMeData[7].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[7].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid10">
-                    <img src={aboutMeData[8].imageSrc} alt={aboutMeData[8].title} />
-                    <div className="grid-item__hover-text">
-                        <h4>{aboutMeData[8].title}</h4>
-                    </div>
-                </div>
-                <div className="grid-item grid11">
-                    <img src={aboutMeData[5].imageSrc} alt={aboutMeData[1].title} />
-                </div>
+                </Box>
+                <Box className="grid-item grid8">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[6]} />
+                </Box>
+                <Box className="grid-item grid9">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[7]} />
+                </Box>
+                <Box className="grid-item grid10">
+                    <PhotosAboutMeGridItem aboutMeData={aboutMeData[8]} />
+                </Box>
+                <Box className="grid-item grid11">
+                    {/* <PhotosAboutMeGridItem aboutMeData={aboutMeData[9]} /> */}
+                </Box>
             </div>
         </div>
     )
