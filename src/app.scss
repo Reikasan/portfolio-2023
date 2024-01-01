@@ -156,6 +156,8 @@ img {
     }
 
     .photo-about-me {
+        margin-left: -10px;
+        
         .grid {
             display: grid;
             grid-template-columns: repeat(4 , 1fr);

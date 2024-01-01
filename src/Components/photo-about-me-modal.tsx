@@ -92,7 +92,7 @@ const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, photoAboutMe
                             </Typography>
                         </Box>
                         )}
-                        { photoAboutMeData.id != 9 && (
+                        { photoAboutMeData.id != 10 && (
                         <Box sx={{
                                 position: 'absolute' as 'absolute',
                                 bottom: '0',
