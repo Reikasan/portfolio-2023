@@ -87,8 +87,27 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     ":hover" : {
+                        borderRadius: "0px",
                         boxShadow: "rgba(0, 0, 0, 0.2) 0px 7px 8px -4px, rgba(0, 0, 0, 0.14) 0px 12px 17px 2px, rgba(0, 0, 0, 0.12) 0px 5px 22px 4px",
                     },
+                },
+            },
+        },
+        MuiTooltip: {
+            styleOverrides: {
+                arrow: {
+                    "&:before": {
+                      border: "1px solid #252422"
+                    },
+                    color: '#252422'
+                  },
+                tooltip: {
+                    backgroundColor: '#252422',
+                    color: '#FFF',
+                    fontSize: '1rem',
+                    padding: '10px 5px',
+                    borderRadius: '0px',
+                    border: '1px solid #252422',
                 },
             },
         },

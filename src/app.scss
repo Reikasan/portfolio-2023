@@ -12,6 +12,11 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .modal {
     img {
         width: 100%;
@@ -155,9 +160,15 @@ img {
         }
     }
 
+    // .neko-img-container {
+    //     display: flex;
+    //     gap: 3rem;
+    //     height: 10vh;
+    // }
+
     .photo-about-me {
         margin-left: -10px;
-        
+
         .grid {
             display: grid;
             grid-template-columns: repeat(4 , 1fr);
@@ -423,5 +434,38 @@ img {
 
 }
 
+.contact {
+    background-color: $primaryColor;
+
+    h1 {
+        color: $black;
+        line-height: 140px;
+        letter-spacing: -8px;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 175px;
+        font-weight: normal;
+        transition: all 0.1s linear;
+        width: fit-content;
+
+        &:hover {
+            -webkit-text-stroke: 2px #fff;
+            color: transparent;
+        }
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin: 0 0 1rem
+    }
+
+    p:nth-of-type(3) {
+        font-size: 3rem;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        margin-top: 2rem;
+    }
+}
 
 
