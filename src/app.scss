@@ -115,18 +115,18 @@ a {
 .about {
     position: relative;
 
-    span.empText1 {
-        font-size: 3.2rem;
-        background-color: blueviolet;
-        color: coral;
+    .quote-icon {
+        width: 2rem;
+        height: 2rem;
     }
 
-    span.empText2 {
-        font-size: 3.2rem;
-        text-decoration: underline;
-        text-decoration-color: coral;
-        color: blueviolet;
-        text-transform: uppercase;
+    &__text {
+        p {
+            font-family: "Roboto","Helvetica","Arial",sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            width: 40vw
+        }
     }
 
     .photo-about-me {
