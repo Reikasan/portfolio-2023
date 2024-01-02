@@ -113,58 +113,21 @@ a {
 }
 
 .about {
-    &__skills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 80%;
-        height: 100%;
-        padding: 0;
-        list-style: none;
-        font-family: silkscreen;
-        font-size: 1.5rem;
-        font-weight: normal;
-        color: $black;
-        text-align: center;
+    position: relative;
 
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            width: 80%;
-            height: 100%;
-            padding: 0;
-            list-style: none;
-            font-family: silkscreen;
-            font-size: 1.5rem;
-            font-weight: normal;
-            color: $black;
-            text-align: center;
-        }
-
-        li {
-            margin: 0 1rem;
-            padding: 0.5rem 1rem;
-            border: 1px solid $black;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-                background-color: $black;
-                color: $creamColor;
-            }
-        }
+    span.empText1 {
+        font-size: 3.2rem;
+        background-color: blueviolet;
+        color: coral;
     }
 
-    // .neko-img-container {
-    //     display: flex;
-    //     gap: 3rem;
-    //     height: 10vh;
-    // }
+    span.empText2 {
+        font-size: 3.2rem;
+        text-decoration: underline;
+        text-decoration-color: coral;
+        color: blueviolet;
+        text-transform: uppercase;
+    }
 
     .photo-about-me {
         margin-left: -10px;
@@ -460,11 +423,13 @@ a {
         margin: 0 0 1rem
     }
 
-    p:nth-of-type(3) {
-        font-size: 3rem;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 700;
-        margin-top: 2rem;
+    &__link {
+        svg {
+            width: 40px;
+            height: 40px;
+            // fill: $black;
+            // transition: all 0.3s ease-in-out;
+        }
     }
 }
 

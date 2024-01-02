@@ -1,7 +1,10 @@
-import { Box, Container, Tooltip, Typography } from "@mui/material";
+import { Button, Box, Container, Tooltip, Typography, Link } from "@mui/material";
 import kuroNekoImg from "../assets/images/kuro-neko.png";
 import pinkNekoImg from "../assets/images/pink-neko.png";
-import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 const imgContainerStyle = {
     display: 'flex',
@@ -9,6 +12,11 @@ const imgContainerStyle = {
     position: 'absolute' as 'absolute',
     right: '0',
     bottom: '10vh',
+}
+
+const linkStyle = {
+    width: '40px',
+    height: '40px',
 }
 
 const contact = () => {
@@ -24,9 +32,23 @@ const contact = () => {
                 </Box>
                 <Box>
                     <h2>Thank you for visiting my portfolio.</h2>
-                    <Typography variant="body1">If you have any questions, please feel free to contact me.</Typography>
+                    <Typography variant="body1">If you have any questions, interests or anything, please feel free to contact me.</Typography>
                     <Typography variant="body1">I am looking forward to hearing from you.</Typography>
-                    <p className="contact__message">Have a nice day!</p> 
+                    <Box>
+                        <Typography variant="h5" sx={{margin: '2rem 0 1rem'}}>Also check this!</Typography>
+                        <Box sx={{display: 'flex', gap: '2rem'}}>
+                            <Link color="inherit" href="https://github.com/Reikasan" target="_blank" rel="noopener noreferrer" className="contact__link">
+                                <GitHubIcon/>
+                            </Link>
+                            <Link color="inherit" href="https://codepen.io/reikasan" target="_blank" rel="noopener noreferrer" className="contact__link">
+                                <FontAwesomeIcon icon={faCodepen} />
+                            </Link>
+                            <Link color="inherit" href="https://www.linkedin.com/in/reika-akuzawa-8271b7242/" target="_blank" rel="noopener noreferrer" className="contact__link">
+                                <LinkedInIcon/>
+                            </Link>
+                        </Box>
+                    </Box>
+                    {/* <p className="contact__message">Have a nice day!</p>  */}
                     <Box className="neko-img-container" sx={imgContainerStyle}>
                         <img src={kuroNekoImg} alt="kuro-neko" className="contact__img" />
                         <img src={pinkNekoImg} alt="pink-neko" className="contact__img" /> 
