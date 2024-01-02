@@ -1,6 +1,7 @@
 import { Button, Container } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { useRef } from "react";
+import { Link as Scroll } from 'react-scroll';
 
 const HeroSection = () => {
     const counter = useRef(0);
@@ -37,7 +38,14 @@ const HeroSection = () => {
                     <p className="hero-section__description">
                         Web Developer based in Berlin.
                     </p>
-                    <Button variant="contained" color="primaryButton" className="hero-section__button">Contact Me</Button>
+                    <Scroll 
+                      to={`${'contact'}`}
+                      offset={-64}
+                      smooth
+                      spy
+                    >
+                        <Button variant="contained" color="primaryButton" className="hero-section__button">Contact Me</Button>
+                    </Scroll>
                 </div>
             </Container>
         </div>
