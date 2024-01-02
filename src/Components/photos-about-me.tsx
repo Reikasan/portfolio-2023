@@ -1,6 +1,6 @@
-import { Box, Modal, Typography } from "@mui/material";
-import { aboutMeData } from "../data/about-me-data";
 import React from "react";
+import { Box } from "@mui/material";
+import { aboutMeData } from "../data/about-me-data";
 import PhotosAboutMeGridItem from "./photo-about-me-grid-item";
 import PhotoAboutMeModal from "./photo-about-me-modal";
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { AppBar, Box, Container, IconButton, Menu, MenuItem, Slide, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Container, IconButton, Menu, MenuItem, Toolbar } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link as Scroll } from 'react-scroll';
 import ShowOnScroll from './show-on-scroll-nav';

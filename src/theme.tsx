@@ -36,7 +36,7 @@ const theme = createTheme({
             main: '#ED217C',
             light: '#FFF',
             dark: '#E2C402',
-            contrastText: '#2D3047',
+            contrastText: '#252422',
         },
         secondaryButton: {
             main: '#FDFFFC',
