@@ -20,7 +20,7 @@ const aboutBgSqStyle = {
     width: '150px', 
     height: '150px', 
     position: 'absolute' as 'absolute', 
-    right: '33vw', 
+    right: {xs:'26vw', sm:'33vw'}, 
     bottom: 0, 
     opacity: '0.4', 
     backgroundColor: '#4abea0',
@@ -31,12 +31,12 @@ const about = () => {
     return (
         <section id="about" className="about">
             <RunningMessage message="about" direction="from-left" />
-            <Container maxWidth="md" sx={{padding: '10vh 0'}}>
-                <Box sx={{ margin: '0 0 10vh', height: '300px'}}>
-                    <Box className="about__text" sx={{width: '80%'}}>
+            <Container maxWidth="md" sx={{paddingTop: {xs: '5vh', sm:'10vh'}, paddingBottom: {xs: '5vh', md:'10vh'}}}>
+                <Box sx={{ margin: '0 0 10vh'}}>
+                    <Box className="about__text" sx={{width: {xs:'100%', sm:'80%'}}}>
                         <Box sx={{marginBottom: '3rem'}}>
                             <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon"/>
-                            <Typography variant="h3" component="h2" sx={{width: '80%', marginLeft: '1rem', fontWeight: '100'}}>
+                            <Typography variant="h3" component="h2" sx={{width: {xs: '100%', sm:'80%'}, marginLeft: '1rem', fontWeight: '100', fontSize: {xs: '2.5em', md:'3em'}}}>
                                 How can I change the life a bit better?
                             </Typography>
                         </Box>
@@ -49,7 +49,7 @@ const about = () => {
                 </Box>
                 <PhotosAboutMe />
             </Container>
-            <Box sx={{height: '300px', position: 'absolute' as 'absolute', top: '200px', right: 0}}>
+            <Box sx={{height: '300px', position: 'absolute' as 'absolute', top: {xs:'120px', sm:'200px'}, right: 0}}>
                 <Box className="about__image" sx={aboutImageStyle}>
                     <img src={lightsImg} alt="lights" />
                 </Box>

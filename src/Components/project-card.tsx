@@ -15,8 +15,8 @@ type projectProps = {
 
 const ProjectCard: React.FC<projectProps> = ({project}) => {
     return (
-        <Paper elevation={3} sx={{marginBottom: '50px', padding: '40px', position: 'relative'}} className="project-card">
-            <Grid container spacing={5}>
+        <Paper elevation={3} sx={{marginBottom: '50px', padding: {xs: '20px', sm:'40px'}, position: 'relative'}} className="project-card">
+            <Grid container spacing={{xs: 3, md: 5}}>
                 <Grid item md={7} xs={12} className="project-card__image">
                     <img src={project.imageSrc} alt={project.title} />
                 </Grid>

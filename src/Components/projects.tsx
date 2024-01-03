@@ -7,10 +7,7 @@ const Projects = () => {
     return (
         <section id="projects" className="projects">
             <RunningMessage message="project" direction="from-right" />
-                <Container maxWidth="md"  
-                    sx={{
-                        padding: '10vh 0 10vh',
-                    }}>
+                <Container maxWidth="md" sx={{paddingTop: {xs: '5vh', md:'10vh'}, paddingBottom: {xs: '5vh', md:'10vh'}}}>
                     <div className="projects__container">
                         {projectsData.map((project, index)  => (
                             <ProjectCard 

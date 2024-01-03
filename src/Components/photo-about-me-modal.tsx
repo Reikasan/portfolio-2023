@@ -18,9 +18,8 @@ const modalStyle = {
 };
 
 const closeIconStyle = {
-    width: '2rem',
-    height: '2rem',
-    fontSize: '2rem',
+    width: {md: '1.5rem', lg:'2rem'},
+    height: {md: '1.5rem', lg:'2rem'},
     backgroundColor: 'primary.main',
     position: 'absolute' as 'absolute',
     borderRadius: '50%',

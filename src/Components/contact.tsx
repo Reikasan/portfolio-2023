@@ -1,4 +1,4 @@
-import { Button, Box, Container, Tooltip, Typography, Link } from "@mui/material";
+import {Box, Container, Tooltip, Typography, Link } from "@mui/material";
 import kuroNekoImg from "../assets/images/kuro-neko.png";
 import pinkNekoImg from "../assets/images/pink-neko.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -8,22 +8,17 @@ import { faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 const imgContainerStyle = {
     display: 'flex',
-    height: '17vh',
+    height: {xs: '20vw', md: '17vh'},
     position: 'absolute' as 'absolute',
-    right: '0',
+    right: '2rem',
     bottom: '10vh',
-}
-
-const linkStyle = {
-    width: '40px',
-    height: '40px',
 }
 
 const contact = () => {
     return (
         <section id="contact" className="contact">
-            <Container className="contact__container" maxWidth="md"  sx={{ padding: '0 0 10vh', position: 'relative' as 'relative'}}>
-                <Box sx={{ marginBottom: '10vh'}}>
+            <Container className="contact__container" maxWidth="md"  sx={{ paddingBottom: '10vh', position: 'relative' as 'relative'}}>
+                <Box sx={{ marginBottom: {md: '5vh', lg:'10vh'}}}>
                     <a href="mailto:l06981@googlemail.com" className="contact__mail">
                         <Tooltip title="Mail to me!" arrow>
                             <Typography variant="h1">Contact</Typography>
@@ -36,7 +31,7 @@ const contact = () => {
                     <Typography variant="body1">I am looking forward to hearing from you.</Typography>
                     <Box>
                         <Typography variant="h5" sx={{margin: '2rem 0 1rem'}}>Also check this!</Typography>
-                        <Box sx={{display: 'flex', gap: '2rem'}}>
+                        <Box sx={{display: 'flex', gap: {xs: '1rem', md:'2rem' }}}>
                             <Link color="inherit" href="https://github.com/Reikasan" target="_blank" rel="noopener noreferrer" className="contact__link">
                                 <GitHubIcon/>
                             </Link>
@@ -48,7 +43,6 @@ const contact = () => {
                             </Link>
                         </Box>
                     </Box>
-                    {/* <p className="contact__message">Have a nice day!</p>  */}
                     <Box className="neko-img-container" sx={imgContainerStyle}>
                         <img src={kuroNekoImg} alt="kuro-neko" className="contact__img" />
                         <img src={pinkNekoImg} alt="pink-neko" className="contact__img" /> 
