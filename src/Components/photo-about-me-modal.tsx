@@ -12,7 +12,7 @@ const modalStyle = {
     maxHeight: '80vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
-    p: 4,
+    p: {xs: 2, sm: 4},
     overflow: 'scroll' as 'scroll',
     outline: 'none',
 };
@@ -23,8 +23,8 @@ const closeIconStyle = {
     backgroundColor: 'primary.main',
     position: 'absolute' as 'absolute',
     borderRadius: '50%',
-    top: '1rem',
-    right: '1rem',
+    top: {xs: '.5rem', sm: '1rem'},
+    right: {xs: '.5rem', sm: '1rem'},
     color: '#fff',
     cursor: 'pointer',
 }
@@ -32,7 +32,7 @@ const closeIconStyle = {
 const titleStyle = {
     textTransform: 'uppercase',
     lineHeight: '2.5rem',
-    margin: '2rem 0',
+    margin: {xs: '1rem 0', sm: '2rem 0'},
     textAlign: 'center' as 'center',
     fontWeight: 100,
 }
