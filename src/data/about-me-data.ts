@@ -25,27 +25,27 @@ export const aboutMeData = [
     },
     {
         id: 3,
-        imageSrc: ikebanaPhoto,
-        title: 'Ikebana',
-        description: 'Ikebana is art of japanese flower arrangement. My mother is a teacher of ikebana, so I have been learning it since I was a child.',
-    },
-    {
-        id: 4,
         imageSrc: berlinPhoto,
         title: 'Berlin',
         description: 'I love this city because it is so international and has a lot of opportunities.',
     },
     {
-        id: 5,
+        id: 4,
         imageSrc: weightTrainingPhoto,
         title: 'Training',
         description: 'Every morning I do training. One day, Yoga, other day with over 50 kg weight. Morning Exercise makes me feel good for the whole day!',
     },
     {
-        id: 6,
+        id: 5,
         imageSrc: diamondPhoto,
         title: 'Diamond',
         description: 'My first Job was a sorter of small diamonds. Each diamond has different color of shining. Since then I have been interested in the beauty of natural creations.',
+    },
+    {
+        id: 6,
+        imageSrc: ikebanaPhoto,
+        title: 'Ikebana',
+        description: 'Ikebana is art of japanese flower arrangement. My mother is a teacher of ikebana, so I have been learning it since I was a child.',
     },
     {
         id: 7,
