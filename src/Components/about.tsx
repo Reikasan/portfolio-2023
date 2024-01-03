@@ -33,7 +33,7 @@ const about = () => {
             <RunningMessage message="about" direction="from-left" />
             <Container maxWidth="md" sx={{paddingTop: {xs: '5vh', sm:'10vh'}, paddingBottom: {xs: '5vh', md:'10vh'}}}>
                 <Box sx={{ margin: '0 0 10vh'}}>
-                    <Box className="about__text" sx={{width: {xs:'100%', sm:'80%'}}}>
+                    <Box className="about__text" sx={{width: {xs:'100%', sm:'80%'}, whiteSpace: 'break-spaces'}}>
                         <Box sx={{marginBottom: '3rem'}}>
                             <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon"/>
                             <Typography variant="h3" component="h2" sx={{width: {xs: '100%', sm:'80%'}, marginLeft: '1rem', fontWeight: '100', fontSize: {xs: '2.5em', md:'3em'}}}>

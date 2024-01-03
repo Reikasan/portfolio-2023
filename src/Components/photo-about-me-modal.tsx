@@ -8,7 +8,7 @@ const modalStyle = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    maxWidth: '400px',
+    width: {xs: '80vw', sm: '400px'},
     maxHeight: '80vh',
     bgcolor: 'background.paper',
     boxShadow: 24,
@@ -31,10 +31,11 @@ const closeIconStyle = {
 
 const titleStyle = {
     textTransform: 'uppercase',
-    lineHeight: '2.5rem',
+    lineHeight: {xs: '2rem', sm: '2.5rem'},
     margin: {xs: '1rem 0', sm: '2rem 0'},
     textAlign: 'center' as 'center',
     fontWeight: 100,
+    fontSize: {xs: '2rem', sm: '3rem'},
 }
 
 interface PhotoAboutMeModalProps {

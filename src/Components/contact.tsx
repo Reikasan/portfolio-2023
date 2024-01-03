@@ -30,7 +30,7 @@ const contact = () => {
                     <Typography variant="body1">If you have any questions, interests or anything, please feel free to contact me.</Typography>
                     <Typography variant="body1">I am looking forward to hearing from you.</Typography>
                     <Box>
-                        <Typography variant="h5" sx={{margin: '2rem 0 1rem'}}>Also check this!</Typography>
+                        <Typography variant="h5" sx={{margin: '2rem 0 1rem'}}>Also check!</Typography>
                         <Box sx={{display: 'flex', gap: {xs: '1rem', md:'2rem' }}}>
                             <Link color="inherit" href="https://github.com/Reikasan" target="_blank" rel="noopener noreferrer" className="contact__link">
                                 <GitHubIcon/>

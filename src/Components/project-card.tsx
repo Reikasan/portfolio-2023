@@ -21,8 +21,12 @@ const ProjectCard: React.FC<projectProps> = ({project}) => {
                     <img src={project.imageSrc} alt={project.title} />
                 </Grid>
                 <Grid item md={5} xs={12} className="project-card__content">
-                    <Typography variant="h4" component="h3" sx={{ fontFamily: "Poppins"}}>{project.title}</Typography>
-                    <p>{project.description}</p>
+                    <Typography variant="h4" component="h3" sx={{ fontFamily: "Poppins", marginBottom: '2rem'}}>
+                        {project.title}
+                    </Typography>
+                    <Typography variant="body1" component="p">
+                        {project.description}
+                    </Typography>
                     <ul className="project-card__content--tech-list">
                         {project.technologies.map((technology, index) => (
                             <li key={index}>{technology}</li>
