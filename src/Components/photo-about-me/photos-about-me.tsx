@@ -5,12 +5,7 @@ import PhotosAboutMeGridItem from "./photo-about-me-grid-item";
 import PhotoAboutMeModal from "./photo-about-me-modal";
 import classNames from "classnames";
 import styles from './styles.module.scss';
-
-interface aboutMeData {
-    imageSrc: string;
-    title: string;
-    description: string;
-}
+import { title } from "process";
 
 const PhotosAboutMe = () => {
     const [open, setOpen] = React.useState(false);
@@ -75,7 +70,7 @@ const PhotosAboutMe = () => {
                     </Box>
                 </div>
             </div>
-            <PhotoAboutMeModal open={open} photoAboutMeData={aboutMeData[modalNumber]} handleOpen={handleOpen} handleClose={handleClose} />
+            <PhotoAboutMeModal  aboutMeData={aboutMeData[modalNumber]} open={open} handleOpen={handleOpen} handleClose={handleClose} />
         </div>
     )
 }

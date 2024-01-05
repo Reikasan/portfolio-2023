@@ -1,16 +1,9 @@
 import React from 'react';
 import styles from './styles.module.scss';
 import classNames from 'classnames';
+import { AboutMeProps } from '../../types';
 
-interface PhotosAboutMeGridItemProps {
-    aboutMeData: {
-        imageSrc: string;
-        title: string;
-        description: string;
-    }
-}
-
-const PhotosAboutMeGridItem:React.FC<PhotosAboutMeGridItemProps> = ({ aboutMeData }) => {
+const PhotosAboutMeGridItem:React.FC<AboutMeProps> = ({ aboutMeData }) => {
     return (
         <>
             <img src={aboutMeData.imageSrc} alt={aboutMeData.title} />

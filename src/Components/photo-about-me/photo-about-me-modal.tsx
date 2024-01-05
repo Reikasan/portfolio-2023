@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import styles from './styles.module.scss';
+import { PhotoAboutMeModalProps } from '../../types';
 
 const modalStyle = {
     position: 'absolute' as 'absolute',
@@ -39,21 +40,9 @@ const titleStyle = {
     fontSize: {xs: '2rem', sm: '3rem'},
 }
 
-interface PhotoAboutMeModalProps {
-    open: boolean;
-    photoAboutMeData: {
-        id: number;
-        imageSrc: string;
-        title: string;
-        description: string;
-    }
-    handleClose: () => void;
-    handleOpen: (index: number) => () => void;
-}
-
-const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, photoAboutMeData, handleOpen, handleClose }) => {
-    const previousId = photoAboutMeData.id - 2;
-    const nextId = photoAboutMeData.id;
+const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, aboutMeData, handleOpen, handleClose }) => {
+    const previousId = aboutMeData.id - 2;
+    const nextId = aboutMeData.id;
 
     return (
         <div>
@@ -66,18 +55,18 @@ const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, photoAboutMe
                 <Paper sx={modalStyle} className={styles.modal}>
                     <CloseIcon onClick={handleClose} className="close-icon" sx={closeIconStyle}/>
                     <Box className="image-container" sx={{ height: "30%" }}>
-                        <img src={photoAboutMeData.imageSrc} alt={photoAboutMeData.title} />
+                        <img src={aboutMeData.imageSrc} alt={aboutMeData.title} />
                     </Box>
-                    <Box className="text-contaisner" sx={{ margin: '0 1rem'}}>
+                    <Box sx={{ margin: '0 1rem'}}>
                         <Typography id="about-me-modal-title" variant="h3" component="h3" sx={titleStyle}>
-                            {photoAboutMeData.title}
+                            {aboutMeData.title}
                         </Typography>
                         <Typography id="about-me-modal-description" sx={{ mt: 2 }}>
-                            {photoAboutMeData.description}
+                            {aboutMeData.description}
                         </Typography>
                     </Box>
                     <Box sx={{ position: 'relative' as 'relative', marginTop: '2rem', color: '#aaa', height: '2rem'}}>
-                        { photoAboutMeData.id != 1 && ( 
+                        { aboutMeData.id != 1 && ( 
                         <Box sx={{
                                 position: 'absolute' as 'absolute',
                                 bottom: '0',
@@ -93,7 +82,7 @@ const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, photoAboutMe
                             </Typography>
                         </Box>
                         )}
-                        { photoAboutMeData.id != 10 && (
+                        { aboutMeData.id != 10 && (
                         <Box sx={{
                                 position: 'absolute' as 'absolute',
                                 bottom: '0',

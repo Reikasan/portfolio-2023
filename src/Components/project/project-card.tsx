@@ -2,17 +2,7 @@ import { Grid, Button, Paper, Typography } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import styles from "./styles.module.scss";
-
-type projectProps = {
-    project: {
-        imageSrc: string,
-        title: string,
-        description: string,
-        technologies: Array<string>,
-        site: string,
-        github: string,
-    },
-}
+import { ProjectProps } from "../../types";
 
 const projectCardStyle = {
     marginBottom: '50px', 
@@ -25,7 +15,7 @@ const projectCardStyle = {
     fontFamily: 'Roboto, sans-serif',
 }
 
-const ProjectCard: React.FC<projectProps> = ({project}) => {
+const ProjectCard: React.FC<ProjectProps> = ({project}) => {
     return (
         <Paper elevation={3} sx={projectCardStyle} className="projectCard">
             <Grid container spacing={{xs: 3, md: 5}}>
@@ -60,10 +50,8 @@ const ProjectCard: React.FC<projectProps> = ({project}) => {
                         </Button>
                         }
                     </div>
+                </Grid>
             </Grid>
-            </Grid>
-           
-           
         </Paper>
         
     )

@@ -1,10 +1,6 @@
 import classNames from "classnames";
 import styles from './styles.module.scss';
-
-interface RunningMessageProps {
-    message: string;
-    direction: string;
-}
+import { RunningMessageProps } from "../../types";
 
 const RunningMessage:React.FC<RunningMessageProps> = ({message, direction}) => {
     let cls = {
@@ -21,8 +17,6 @@ const RunningMessage:React.FC<RunningMessageProps> = ({message, direction}) => {
                 <div className={classNames(cls)}>
                     <h1>{message}</h1>
                 </div>
-
-
             </div> 
         </div>
     );
