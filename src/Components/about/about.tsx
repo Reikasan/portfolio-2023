@@ -1,4 +1,4 @@
-import RunningMessage from "../running-message";
+import RunningMessage from "../running-message/running-message";
 import { Box, Container, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";

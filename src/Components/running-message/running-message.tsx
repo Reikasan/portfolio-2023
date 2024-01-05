@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import styles from './styles.module.scss';
 
 interface RunningMessageProps {
     message: string;
@@ -7,13 +8,13 @@ interface RunningMessageProps {
 
 const RunningMessage:React.FC<RunningMessageProps> = ({message, direction}) => {
     let cls = {
-        'from-right' : direction === "from-right",
-        'from-left': direction === "from-left",
+        [styles.fromRight] : direction === "from-right",
+        [styles.fromLeft] : direction === "from-left",
     }
 
     return (
-        <div className="running-message">
-            <div className="running-message__container">
+        <div className={styles.runningMessage}>
+            <div className={styles.runningMessage__container}>
                 <div className={classNames(cls)}>
                     <h1>{message}</h1>
                 </div>
