@@ -1,0 +1,65 @@
+$black: #252422;
+
+.projectCard {
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            border: solid 1px #aaaaaa6c;
+            border-radius: 3px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        gap: 2em;
+        position: absolute;
+        bottom: 40px;
+
+        .projectLink {
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .underConstructionLabel {
+            position: absolute;
+            bottom: 0;
+            left: -1rem;
+            transform: rotate(-10deg);
+            width: 150px;
+            background-color: #FFF;
+            border: solid 2px $black;
+            font-size: smaller;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 599px) {
+            gap: unset;
+            justify-content: space-evenly;
+            width: 80vw;
+            
+        }
+    }
+
+    &__contentTechList {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 1rem;
+        padding-inline-start: 0;
+        margin-top: 20px;
+
+        @media screen and (max-width: 899px) {
+            margin-top: 20px;
+            margin-bottom: 6rem;
+        }
+
+        li {
+            white-space: nowrap;
+            font-size: larger;
+            background: linear-gradient(180deg, transparent 60%, #4abea061 40%);
+        }
+    }
+}

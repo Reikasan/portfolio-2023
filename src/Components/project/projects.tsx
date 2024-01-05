@@ -1,7 +1,7 @@
-import RunningMessage from "./running-message";
+import RunningMessage from "../running-message";
 import { Container } from "@mui/material";
 import ProjectCard from "./project-card";
-import { projectsData }  from "../data/projects-data";  
+import { projectsData }  from "../../data/projects-data";  
 
 const Projects = () => {
     return (
