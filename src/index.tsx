@@ -11,13 +11,11 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const baseUrl = process.env.PUBLIC_URL;
-
 const ogpData = {
   title: 'Reika Akuzawa Portfolio Site',
   description: 'Reika Akuzawa is a Junior Web developer based in Berlin.',
-  image: `${baseUrl}/src/assets/images/ogp-img.jpg`,
-  url: `${baseUrl}`,
+  image: `${process.env.PUBLIC_URL}/src/assets/images/ogp-image.png`,
+  url: `${process.env.PUBLIC_URL}`,
   type: 'website',
   facebookAppId: process.env.REACT_APP_FACEBOOK_APP_ID,
 };
