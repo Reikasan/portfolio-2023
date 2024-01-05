@@ -5,7 +5,6 @@ import PhotosAboutMeGridItem from "./photo-about-me-grid-item";
 import PhotoAboutMeModal from "./photo-about-me-modal";
 import classNames from "classnames";
 import styles from './styles.module.scss';
-import { title } from "process";
 
 const PhotosAboutMe = () => {
     const [open, setOpen] = React.useState(false);

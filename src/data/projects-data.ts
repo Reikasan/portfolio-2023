@@ -26,7 +26,7 @@ export const projectsData = [
         title: 'Portfolio Website',
         description: 'This Website built with React.',
         technologies: ['React', 'Material UI', 'TypeScript', 'Sass'],
-        site: `${baseURL}`,
+        site: `${baseURL}#heroSection`,
         github: 'https://github.com/Reikasan/portfolio-2023'
     }
 ];

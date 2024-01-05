@@ -1,4 +1,4 @@
-import {Box, Container, Tooltip, Typography, Link } from "@mui/material";
+import {Box, Button, Container, Tooltip, Typography, Link } from "@mui/material";
 import kuroNekoImg from "../../assets/images/kuro-neko.png";
 import pinkNekoImg from "../../assets/images/pink-neko.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,6 +15,24 @@ const imgContainerStyle = {
     bottom: '10vh',
 }
 
+const mailMeButtonStyle = {
+    // display: {xs: 'block', sm: 'none'},
+    width: '50vw',
+    marginBottom: '2rem',
+    // borderRadius: '0px',
+    border: '2px solid #252422',
+    padding: '1rem',
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    textAlign: 'center' as 'center',
+    '&:hover': {
+        backgroundColor: '#252422',
+        color: '#ED217C',
+        border: '2px solid #252422',
+    }
+
+}
+
 const contact = () => {
     return (
         <section id="contact" className={ styles.contact}>
@@ -28,6 +46,11 @@ const contact = () => {
                 </Box>
                 <Box>
                     <h2>Thank you for visiting my portfolio.</h2>
+                    <Box sx={{display: {xs:'flex', sm: 'none'}, justifyContent: 'center', paddingTop: '1rem'}}>
+                        <Button variant="outlined" color="secondaryButton" href="mailto:l06981@googlemail.com" sx={mailMeButtonStyle}>
+                            Mail To Me!
+                        </Button>
+                    </Box>
                     <Typography variant="body1">If you have any questions, interests or anything, please feel free to contact me.</Typography>
                     <Typography variant="body1">I am looking forward to hearing from you.</Typography>
                     <Box>

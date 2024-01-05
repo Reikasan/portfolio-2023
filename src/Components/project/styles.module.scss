@@ -39,7 +39,16 @@ $black: #252422;
             gap: unset;
             justify-content: space-evenly;
             width: 80vw;
-            
+
+            .underConstructionLabel {
+                left: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 449px) {
+            .underConstructionLabel {
+                left: 0rem;
+            }
         }
     }
 

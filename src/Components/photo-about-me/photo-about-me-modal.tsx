@@ -66,7 +66,7 @@ const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, aboutMeData,
                         </Typography>
                     </Box>
                     <Box sx={{ position: 'relative' as 'relative', marginTop: '2rem', color: '#aaa', height: '2rem'}}>
-                        { aboutMeData.id != 1 && ( 
+                        { aboutMeData.id !== 1 && ( 
                         <Box sx={{
                                 position: 'absolute' as 'absolute',
                                 bottom: '0',
@@ -82,7 +82,7 @@ const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, aboutMeData,
                             </Typography>
                         </Box>
                         )}
-                        { aboutMeData.id != 10 && (
+                        { aboutMeData.id !== 10 && (
                         <Box sx={{
                                 position: 'absolute' as 'absolute',
                                 bottom: '0',
