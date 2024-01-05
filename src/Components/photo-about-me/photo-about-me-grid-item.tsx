@@ -1,4 +1,7 @@
 import React from 'react';
+import styles from './styles.module.scss';
+import classNames from 'classnames';
+
 interface PhotosAboutMeGridItemProps {
     aboutMeData: {
         imageSrc: string;
@@ -11,7 +14,7 @@ const PhotosAboutMeGridItem:React.FC<PhotosAboutMeGridItemProps> = ({ aboutMeDat
     return (
         <>
             <img src={aboutMeData.imageSrc} alt={aboutMeData.title} />
-            <div className="grid-item__hover-text">
+            <div className={classNames(styles.gridItem__hoverText)}>
                 <h4>{aboutMeData.title}</h4>
             </div>
         </>

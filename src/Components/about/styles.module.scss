@@ -1,0 +1,28 @@
+$primaryColor: #ED217C;
+$black: #252422;
+
+.about {
+    position: relative;
+
+    .quoteIcon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__text {
+        p {
+            font-family: "Roboto","Helvetica","Arial",sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            width: 40vw;
+
+            @media screen and (max-width: 899px) {
+                width: 50vw;
+            }
+
+            @media screen and (max-width: 599px) {
+                width: 80vw;
+            }
+        }
+    }
+}

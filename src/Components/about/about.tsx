@@ -1,9 +1,10 @@
-import RunningMessage from "./running-message";
+import RunningMessage from "../running-message";
 import { Box, Container, Typography } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
-import PhotosAboutMe from "./photos-about-me";
-import lightsImg from "../assets/images/lights.jpg";
+import PhotosAboutMe from "../photo-about-me/photos-about-me";
+import lightsImg from "../../assets/images/lights.jpg";
+import styles from './styles.module.scss';
 
 const aboutImageStyle = {
     width: '40vw', 
@@ -21,7 +22,7 @@ const aboutBgSqStyle = {
     height: '150px', 
     position: 'absolute' as 'absolute', 
     right: {xs:'26vw', sm:'33vw'}, 
-    bottom: 0, 
+    top: {xs: '120px', sm: '100px', md: '150px'}, 
     opacity: '0.4', 
     backgroundColor: '#4abea0',
     zIndex: -1, 
@@ -29,23 +30,22 @@ const aboutBgSqStyle = {
 
 const about = () => {
     return (
-        <section id="about" className="about">
+        <section id="about" className={styles.about}>
             <RunningMessage message="about" direction="from-left" />
             <Container maxWidth="md" sx={{paddingTop: {xs: '5vh', sm:'10vh'}, paddingBottom: {xs: '5vh', md:'10vh'}}}>
                 <Box sx={{ margin: '0 0 10vh'}}>
-                    <Box className="about__text" sx={{width: {xs:'100%', sm:'80%'}, whiteSpace: 'break-spaces'}}>
+                    <Box className={styles.about__text} sx={{width: {xs:'100%', sm:'80%'}, whiteSpace: 'break-spaces'}}>
                         <Box sx={{marginBottom: '3rem'}}>
-                            <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon"/>
+                            <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteIcon}/>
                             <Typography variant="h3" component="h2" sx={{width: {xs: '100%', sm:'80%'}, marginLeft: '1rem', fontWeight: '100', fontSize: {xs: '2.5em', md:'3em'}}}>
                                 How can I change the life a bit better?
                             </Typography>
                         </Box>
                         <p>
-                            I always think about it.<br/>
-                            The difference, what I can make could be a small , but I believe one day it can make someone happy.
+                            I constantly ponder on this question. <br/>
+                            Even the smallest difference I can make, I believe, has the potential to bring happiness to someone one day.
                         </p>
                     </Box>
-                    
                 </Box>
                 <PhotosAboutMe />
             </Container>

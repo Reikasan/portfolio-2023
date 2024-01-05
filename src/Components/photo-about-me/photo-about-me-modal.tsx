@@ -2,6 +2,7 @@ import {Box, Modal, Paper, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import styles from './styles.module.scss';
 
 const modalStyle = {
     position: 'absolute' as 'absolute',
@@ -62,12 +63,12 @@ const photoAboutMeModal: React.FC<PhotoAboutMeModalProps> = ({open, photoAboutMe
                 aria-labelledby="about-me-modal-title"
                 aria-describedby="about-me-modal-description"
             >
-                <Paper sx={modalStyle} className='modal'>
+                <Paper sx={modalStyle} className={styles.modal}>
                     <CloseIcon onClick={handleClose} className="close-icon" sx={closeIconStyle}/>
                     <Box className="image-container" sx={{ height: "30%" }}>
                         <img src={photoAboutMeData.imageSrc} alt={photoAboutMeData.title} />
                     </Box>
-                    <Box className="text-container" sx={{ margin: '0 1rem'}}>
+                    <Box className="text-contaisner" sx={{ margin: '0 1rem'}}>
                         <Typography id="about-me-modal-title" variant="h3" component="h3" sx={titleStyle}>
                             {photoAboutMeData.title}
                         </Typography>
