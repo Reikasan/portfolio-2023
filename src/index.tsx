@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 const ogpData = {
   title: 'Reika Akuzawa Portfolio Site',
   description: 'Reika Akuzawa is a Junior Web developer based in Berlin.',
-  image: `https://reikasan.github.io/portfolio-2023/src/assets/images/ogp-image.png`,
+  image: `https://reikasan.github.io/portfolio-2023/src/assets/images/ogp-img.jpg`,
   url: `${process.env.PUBLIC_URL}`,
   type: 'website',
   facebookAppId: process.env.REACT_APP_FACEBOOK_APP_ID,
@@ -29,6 +29,7 @@ root.render(
         <meta property="og:image" content={ogpData.image} />
         <meta property="og:type" content={ogpData.type} />
         <meta property="og:url" content={ogpData.url} />
+        <meta property="fb:app_id" content={ogpData.facebookAppId} />
 
         <meta name="description" content={ogpData.description} />
         <title>{ogpData.title}</title>
