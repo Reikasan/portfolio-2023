@@ -1,5 +1,5 @@
 import Navigation from "../../Components/navigation/navigation";
-import HeroSection from "../../Components/hero-section";
+import HeroSection from "../../Components/hero-section/hero-section";
 import Projects from "../../Components/project/projects";
 import About from "../../Components/about/about";
 import Contact from "../../Components/contact/contact";

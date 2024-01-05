@@ -2,15 +2,16 @@ import { Button, Container } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
 import { useRef } from "react";
 import { Link as Scroll } from 'react-scroll';
+import styles from './styles.module.scss'
 
 const HeroSection = () => {
     const counter = useRef(0);
     const repeatCount = 3;
     return (
-        <div className="hero-section">
-            <Container maxWidth="sm" className="hero-section__container">
-                <div className="hero-section__content">
-                    <h1 className="hero-section__title">
+        <div className={styles.heroSection}>
+            <Container maxWidth="sm" className={styles.heroSection__container}>
+                <div className={styles.heroSection__content}>
+                    <h1 className={styles.heroSection__title}>
                         <TypeAnimation
                             sequence={[
                                     'Hello World!\nI am\nReika Akuzawa',
@@ -24,7 +25,7 @@ const HeroSection = () => {
                                     }
                             ]}
                             cursor={false}
-                            className="custom-type-animation"
+                            className={styles.customTypeAnimation}
                             speed={10}
                             repeat={repeatCount}
                             style={{ 
@@ -35,7 +36,7 @@ const HeroSection = () => {
                             }}
                         />
                     </h1>
-                    <p className="hero-section__description">
+                    <p className={styles.heroSection__description}>
                         Web Developer based in Berlin.
                     </p>
                     <Scroll 
@@ -44,7 +45,7 @@ const HeroSection = () => {
                       smooth
                       spy
                     >
-                        <Button variant="contained" color="primaryButton" className="hero-section__button">Contact Me</Button>
+                        <Button variant="contained" color="primaryButton" className={styles.heroSection__button}>Contact Me</Button>
                     </Scroll>
                 </div>
             </Container>

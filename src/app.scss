@@ -15,37 +15,6 @@ a {
     color: inherit;
 }
 
-.hero-section {
-    height: 100vh;
-    width: 100vw;
-    
-    &__container {
-        display: flex !important;
-        flex-direction: column;
-        height: 90vh;
-        justify-content: center;
-    }
-
-    &__title {
-        color: $black;
-
-        @media screen and (max-width: 599px) {
-            font-size: 1.3em; 
-        }
-
-        .custom-type-animation::after {
-            content: '|';
-            animation: blink 1s step-start infinite;
-        }
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-    }
-}
-
-
 .running-message {
     color: #fff;
     width: 100%;
