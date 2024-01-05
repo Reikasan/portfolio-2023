@@ -1,10 +1,11 @@
 import {Box, Container, Tooltip, Typography, Link } from "@mui/material";
-import kuroNekoImg from "../assets/images/kuro-neko.png";
-import pinkNekoImg from "../assets/images/pink-neko.png";
+import kuroNekoImg from "../../assets/images/kuro-neko.png";
+import pinkNekoImg from "../../assets/images/pink-neko.png";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodepen } from '@fortawesome/free-brands-svg-icons';
+import styles from './styles.module.scss';
 
 const imgContainerStyle = {
     display: 'flex',
@@ -16,10 +17,10 @@ const imgContainerStyle = {
 
 const contact = () => {
     return (
-        <section id="contact" className="contact">
-            <Container className="contact__container" maxWidth="md"  sx={{ paddingBottom: '10vh', position: 'relative' as 'relative'}}>
+        <section id="contact" className={ styles.contact}>
+            <Container className={ styles.contact__container} maxWidth="md"  sx={{ paddingBottom: '10vh', position: 'relative' as 'relative'}}>
                 <Box sx={{ marginBottom: {md: '5vh', lg:'10vh'}}}>
-                    <a href="mailto:l06981@googlemail.com" className="contact__mail">
+                    <a href="mailto:l06981@googlemail.com" className={ styles.contact__mail}>
                         <Tooltip title="Mail to me!" arrow>
                             <Typography variant="h1">Contact</Typography>
                         </Tooltip>
@@ -32,20 +33,20 @@ const contact = () => {
                     <Box>
                         <Typography variant="h5" sx={{margin: '2rem 0 1rem'}}>Also check!</Typography>
                         <Box sx={{display: 'flex', gap: {xs: '1rem', md:'2rem' }}}>
-                            <Link color="inherit" href="https://github.com/Reikasan" target="_blank" rel="noopener noreferrer" className="contact__link">
+                            <Link color="inherit" href="https://github.com/Reikasan" target="_blank" rel="noopener noreferrer" className={styles.contact__link}>
                                 <GitHubIcon/>
                             </Link>
-                            <Link color="inherit" href="https://codepen.io/reikasan" target="_blank" rel="noopener noreferrer" className="contact__link">
+                            <Link color="inherit" href="https://codepen.io/reikasan" target="_blank" rel="noopener noreferrer" className={styles.contact__link}>
                                 <FontAwesomeIcon icon={faCodepen} />
                             </Link>
-                            <Link color="inherit" href="https://www.linkedin.com/in/reika-akuzawa-8271b7242/" target="_blank" rel="noopener noreferrer" className="contact__link">
+                            <Link color="inherit" href="https://www.linkedin.com/in/reika-akuzawa-8271b7242/" target="_blank" rel="noopener noreferrer" className={styles.contact__link}>
                                 <LinkedInIcon/>
                             </Link>
                         </Box>
                     </Box>
                     <Box className="neko-img-container" sx={imgContainerStyle}>
-                        <img src={kuroNekoImg} alt="kuro-neko" className="contact__img" />
-                        <img src={pinkNekoImg} alt="pink-neko" className="contact__img" /> 
+                        <img src={kuroNekoImg} alt="kuro-neko" className={styles.contact__img} />
+                        <img src={pinkNekoImg} alt="pink-neko" className={styles.contact__img} /> 
                     </Box>
                 </Box>
             </Container>
