@@ -2,6 +2,8 @@ import BarImage from '../assets/images/bar-screenshot.png';
 import PortfolioImage from '../assets/images/portfolio-screenshot.png';
 import BookAppImage from '../assets/images/book-app-screenshot.png';
 
+const baseURL = process.env.PUBLIC_URL;
+
 export const projectsData = [
     {
         imageSrc: BookAppImage,
@@ -24,7 +26,7 @@ export const projectsData = [
         title: 'Portfolio Website',
         description: 'This Website built with React.',
         technologies: ['React', 'Material UI', 'TypeScript', 'Sass'],
-        site: '%PUBLIC_URL%',
+        site: `${baseURL}`,
         github: 'https://github.com/Reikasan/portfolio-2023'
     }
 ];
