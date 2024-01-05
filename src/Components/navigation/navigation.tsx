@@ -4,6 +4,8 @@ import { AppBar, Box, Container, IconButton, Menu, MenuItem, Toolbar } from '@mu
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link as Scroll } from 'react-scroll';
 import ShowOnScroll from './show-on-scroll-nav';
+import styles from './styles.module.scss';
+import classNames from 'classnames';
 
 const sections = ['projects', 'about', 'contact'];
 
@@ -20,11 +22,11 @@ const Navigation = () => {
 
   return (
     <ShowOnScroll>
-      <AppBar position="fixed" id="navigation">
+      <AppBar position="fixed" id="navigation" className={styles.nav}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Scroll
-              className='logo'
+              className={styles.nav__logo}
               to="hero-section"
             >
               Reika Akuzawa
@@ -61,7 +63,7 @@ const Navigation = () => {
                 {sections.map((section) => (
                   <MenuItem key={section} onClick={handleCloseNavMenu}>
                     <Scroll 
-                      className='nav-link mobile'
+                      className={classNames(styles.nav__link, styles.mobile)}
                       to={`${section}`}
                       offset={-64}
                       smooth
@@ -75,17 +77,17 @@ const Navigation = () => {
             </Box>
             <Box 
               sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'end'}} 
-              // onClick={handleCloseNavMenu}
+              onClick={handleCloseNavMenu}
             >
               {sections.map((section) => (
                 <Scroll
                   to={`${section}`}
                   offset={-64}
                   key={section}
-                  // onClick={handleCloseNavMenu}
+                  onClick={handleCloseNavMenu}
                   smooth
                   spy
-                  className='nav-link'
+                  className={classNames(styles.nav__link, styles.lg)}
                 >
                   {section}
                 </Scroll>

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import Slide from '@mui/material/Slide';
 import { useScrollTrigger } from '@mui/material';
 
