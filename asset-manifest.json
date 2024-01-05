@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.724c5afb.css",
-    "main.js": "/portfolio-2023/static/js/main.a3eda609.js",
+    "main.js": "/portfolio-2023/static/js/main.ae3264b2.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio-2023/static/js/787.1ed0c42c.chunk.js",
     "static/media/japan.jpeg": "/portfolio-2023/static/media/japan.8810fc0cfd79660c9b17.jpeg",
     "static/media/photography.jpeg": "/portfolio-2023/static/media/photography.9659ee81ee27231eca95.jpeg",
@@ -71,17 +71,17 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/portfolio-2023/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "static/media/roboto-greek-ext-300-normal.woff2": "/portfolio-2023/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/portfolio-2023/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
+    "index.html": "/portfolio-2023/index.html",
     "static/media/roboto-greek-ext-500-normal.woff": "/portfolio-2023/static/media/roboto-greek-ext-500-normal.eaa367bbd0b333a7f80b.woff",
     "static/media/roboto-greek-ext-300-normal.woff": "/portfolio-2023/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/portfolio-2023/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-2023/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
-    "index.html": "/portfolio-2023/index.html",
     "main.724c5afb.css.map": "/portfolio-2023/static/css/main.724c5afb.css.map",
-    "main.a3eda609.js.map": "/portfolio-2023/static/js/main.a3eda609.js.map",
+    "main.ae3264b2.js.map": "/portfolio-2023/static/js/main.ae3264b2.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio-2023/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.724c5afb.css",
-    "static/js/main.a3eda609.js"
+    "static/js/main.ae3264b2.js"
   ]
 }
