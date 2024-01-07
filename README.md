@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# Reika Akuzawa Portfolio Site
+A responsive portfolio site built with react and material UI.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please visit the site from [HERE](https://reikasan.github.io/portfolio-2023/)
 
-## Available Scripts
+## Screenshot
+<img src="https://private-user-images.githubusercontent.com/68085523/294755036-73877ef9-fb29-4ce6-88a8-e426b8307ffa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ2Mjc2OTAsIm5iZiI6MTcwNDYyNzM5MCwicGF0aCI6Ii82ODA4NTUyMy8yOTQ3NTUwMzYtNzM4NzdlZjktZmIyOS00Y2U2LTg4YTgtZTQyNmI4MzA3ZmZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTA3VDExMzYzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU1ZTJjZGI3MGE0YzUwY2FmYjc1NzBjYjk0YWE1M2E2MmNmYjVmZjQ4MzVkOThiYTZhMDkwM2YxNTlmYzc3YmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jwinf8fO2tnis0gB5HHAaQE9qL7JOZGWbAimBqZEE1s" alt="ogp-img(2)" style="max-width: 100%; height: 250px">
 
-In the project directory, you can run:
+## Languages / Libraries
+- React
+- Material UI
+- TypeScript
 
-### `npm start`
+## About Me
+GitHub: <https://github.com/Reikasan>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+LinkedIn: <https://www.linkedin.com/in/reika-akuzawa-8271b7242/>
