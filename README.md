@@ -14,4 +14,4 @@ Please visit the site from [HERE](https://reikasan.github.io/portfolio-2023/)
 ## About Me
 GitHub: <https://github.com/Reikasan>
 
-LinkedIn: <https://www.linkedin.com/in/reika-akuzawa-8271b7242/>
+LinkedIn: [Reika Akuzawa](https://www.linkedin.com/in/reika-akuzawa-8271b7242/)
