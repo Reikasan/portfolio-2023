@@ -28,3 +28,7 @@ export interface RunningMessageProps {
     message: string;
     direction: string;
 }
+
+export interface CursorProps {
+    isHovered: boolean;
+}
