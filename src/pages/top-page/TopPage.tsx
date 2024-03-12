@@ -3,7 +3,7 @@ import HeroSection from "../../Components/hero-section/hero-section";
 import Projects from "../../Components/project/projects";
 import About from "../../Components/about/about";
 import Contact from "../../Components/contact/contact";
-import CustomCursor from "../../Components/cursor/cursor";
+// import CustomCursor from "../../Components/cursor/cursor";
 import { useState} from "react";
 
 const TopPage = () => {
@@ -11,10 +11,10 @@ const TopPage = () => {
 
     return (
         <div 
-            onMouseEnter = {() => setIsHovered(true)}
-            onMouseLeave = {() => setIsHovered(false)}
+            // onMouseEnter = {() => setIsHovered(true)}
+            // onMouseLeave = {() => setIsHovered(false)}
         >
-            <CustomCursor isHovered={isHovered}/>
+            {/* <CustomCursor isHovered={isHovered}/> */}
             <Navigation />
             <HeroSection />
             <Projects />

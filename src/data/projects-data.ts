@@ -18,7 +18,7 @@ export const projectsData = [
     {
         imageSrc: GameImage,
         title: 'TicTacToe Game',
-        description: 'This app is created for personal use. Users can save book information, along with memos, by utilizing the Google Books API.',
+        description: 'Enjoy my first game creation: Tic Tac Toe! Play solo or challenge a friend for some classic fun.',
         technologies: ['HTML', 'CSS', 'JavaScript'],
         site: 'https://reikasan.github.io/tictactoe/',
         github: 'https://github.com/Reikasan/tictactoe'
