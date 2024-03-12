@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.76f41a0f.css",
-    "main.js": "/portfolio-2023/static/js/main.5b75504f.js",
+    "main.js": "/portfolio-2023/static/js/main.d3a9814f.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio-2023/static/js/787.1ed0c42c.chunk.js",
     "static/media/japan.jpeg": "/portfolio-2023/static/media/japan.8810fc0cfd79660c9b17.jpeg",
     "static/media/photography.jpeg": "/portfolio-2023/static/media/photography.9659ee81ee27231eca95.jpeg",
@@ -17,8 +17,10 @@
     "static/media/lights.jpg": "/portfolio-2023/static/media/lights.e6e185455cbd83f798d7.jpg",
     "static/media/weight-training.jpg": "/portfolio-2023/static/media/weight-training.ad4eff090ca17ff286a1.jpg",
     "static/media/diamond.jpg": "/portfolio-2023/static/media/diamond.8094aabbb24349d7f0a0.jpg",
+    "static/media/cv-screenshot.png": "/portfolio-2023/static/media/cv-screenshot.21dbc98bfd8b1c467c6d.png",
     "static/media/portfolio-screenshot.png": "/portfolio-2023/static/media/portfolio-screenshot.fee0a57425511c3cfab5.png",
     "static/media/piano.jpg": "/portfolio-2023/static/media/piano.07303f0cf05f89c5bbf7.jpg",
+    "static/media/game-screenshot.png": "/portfolio-2023/static/media/game-screenshot.9c6574027b0450e700a5.png",
     "static/media/roboto-latin-500-normal.woff2": "/portfolio-2023/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/portfolio-2023/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/portfolio-2023/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -77,11 +79,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/portfolio-2023/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/portfolio-2023/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "main.76f41a0f.css.map": "/portfolio-2023/static/css/main.76f41a0f.css.map",
-    "main.5b75504f.js.map": "/portfolio-2023/static/js/main.5b75504f.js.map",
+    "main.d3a9814f.js.map": "/portfolio-2023/static/js/main.d3a9814f.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio-2023/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76f41a0f.css",
-    "static/js/main.5b75504f.js"
+    "static/js/main.d3a9814f.js"
   ]
 }
