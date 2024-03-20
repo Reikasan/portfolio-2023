@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head prefix="og: http://ogp.me/ns#">
+    <script data-cookieconsent="ignore">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){
+        dataLayer.push(arguments);
+      }
+      gtag('consent', 'default', {
+          ad_personalization: "denied",
+          ad_storage: "denied",
+          ad_user_data: "denied",
+          analytics_storage: "denied",
+          functionality_storage: "denied",
+          personalization_storage: "denied",
+          security_storage: "granted",
+          wait_for_update: 500,
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-PZ153FEYJX', { 'consent_mode': 'GTM' });
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,24 +51,6 @@
       @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@100;400;700&family=Silkscreen:wght@400;700&display=swap');
     </style>
   </head>
-  <script data-cookieconsent="ignore">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){
-      dataLayer.push(arguments);
-    }
-    gtag('consent', 'default', {
-        ad_personalization: "denied",
-        ad_storage: "denied",
-        ad_user_data: "denied",
-        analytics_storage: "denied",
-        functionality_storage: "denied",
-        personalization_storage: "denied",
-        security_storage: "granted",
-        wait_for_update: 500,
-    });
-    gtag('js', new Date());
-    gtag('config', 'G-PZ153FEYJX', { 'consent_mode': 'GTM' });
-  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
