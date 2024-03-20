@@ -7,13 +7,14 @@ import Contact from "../../Components/contact/contact";
 import { useState} from "react";
 
 const TopPage = () => {
-    const [isHovered, setIsHovered] = useState(false);
+    // const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div 
             // onMouseEnter = {() => setIsHovered(true)}
             // onMouseLeave = {() => setIsHovered(false)}
         >
+
             {/* <CustomCursor isHovered={isHovered}/> */}
             <Navigation />
             <HeroSection />

@@ -33,14 +33,23 @@
       @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@100;400;700&family=Silkscreen:wght@400;700&display=swap');
     </style>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZ153FEYJX"></script>
-  <script>
+  <script data-cookieconsent="ignore">
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+    gtag('consent', 'default', {
+        ad_personalization: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted",
+        wait_for_update: 500,
+    });
     gtag('js', new Date());
-
-    gtag('config', 'G-PZ153FEYJX');
+    gtag('config', 'G-PZ153FEYJX', { 'consent_mode': 'GTM' });
   </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

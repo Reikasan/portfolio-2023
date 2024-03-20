@@ -4,23 +4,23 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Cookiebot from 'react-cookiebot';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import TopPage from './pages/top-page/TopPage';
+import Cookiebot from 'react-cookiebot';
+import GA4Manager from './Components/ga4-manager/ga4-manager';
+
 
 function App() {
-  const cookieBotId = process.env.REACT_APP_COOKIEBOT_ID;
+  const cookieBotId = process.env.REACT_APP_COOKIEBOT_ID || '';
 
-  if(!cookieBotId) {
-    throw new Error('Cookiebot ID is not set');
-  }
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
+      <GA4Manager />
       <Cookiebot domainGroupId={cookieBotId} />
       <Routes>
         <Route path="/" element={<TopPage/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
